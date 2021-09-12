@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  centos_mirror:
+    build: .
+    container_name: centos_mirror
+    command: /centos-mirror-docker/run.sh
+    volumes:
+      - '/mnt/centos_mirror:/var/www/html/repos/'
+  centos_websrv:
+    build:
+      context: .
+      dockerfile: nginx.Dockerfile
+    restart: always
+    container_name: centos_websrv
+    command:
+      - nginx-debug
+      - '-g'
+      - daemon off;
+    volumes:
+      - '/mnt/centos_mirror:/var/www/html/repos:ro'
+    ports:
+      - '8080:80'
