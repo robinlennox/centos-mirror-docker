@@ -11,47 +11,47 @@
 #
  
 [base]
-name=CentOS-$releasever - Base - ucmirror.canterbury.ac.nz
+name=CentOS-$releasever - Base - mirror.fsmg.org.nz
 failovermethod=priority
-baseurl=http://ucmirror.canterbury.ac.nz/linux/centos/$releasever/os/$basearch/
+baseurl=http://mirror.fsmg.org.nz/centos/$releasever/os/$basearch/
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os
 gpgcheck=1
-gpgkey=http://ucmirror.canterbury.ac.nz/linux/centos/RPM-GPG-KEY-CentOS-7
+gpgkey=http://mirror.fsmg.org.nz/centos/RPM-GPG-KEY-CentOS-7
  
 #released updates 
 [updates]
-name=CentOS-$releasever - Updates - ucmirror.canterbury.ac.nz
+name=CentOS-$releasever - Updates - mirror.fsmg.org.nz
 failovermethod=priority
-baseurl=http://ucmirror.canterbury.ac.nz/linux/centos/$releasever/updates/$basearch/
+baseurl=http://mirror.fsmg.org.nz/centos/$releasever/updates/$basearch/
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates
 gpgcheck=1
-gpgkey=http://ucmirror.canterbury.ac.nz/linux/centos/RPM-GPG-KEY-CentOS-7
+gpgkey=http://mirror.fsmg.org.nz/centos/RPM-GPG-KEY-CentOS-7
  
 #additional packages that may be useful
 [extras]
-name=CentOS-$releasever - Extras - ucmirror.canterbury.ac.nz
+name=CentOS-$releasever - Extras - mirror.fsmg.org.nz
 failovermethod=priority
-baseurl=http://ucmirror.canterbury.ac.nz/linux/centos/$releasever/extras/$basearch/
+baseurl=http://mirror.fsmg.org.nz/centos/$releasever/extras/$basearch/
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras
 gpgcheck=1
-gpgkey=http://ucmirror.canterbury.ac.nz/linux/centos/RPM-GPG-KEY-CentOS-7
+gpgkey=http://mirror.fsmg.org.nz/centos/RPM-GPG-KEY-CentOS-7
  
 #additional packages that extend functionality of existing packages
 [centosplus]
-name=CentOS-$releasever - Plus - ucmirror.canterbury.ac.nz
+name=CentOS-$releasever - Plus - mirror.fsmg.org.nz
 failovermethod=priority
-baseurl=http://ucmirror.canterbury.ac.nz/linux/centos/$releasever/centosplus/$basearch/
+baseurl=http://mirror.fsmg.org.nz/centos/$releasever/centosplus/$basearch/
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus
 gpgcheck=1
 enabled=0
-gpgkey=http://ucmirror.canterbury.ac.nz/linux/centos/RPM-GPG-KEY-CentOS-7
+gpgkey=http://mirror.fsmg.org.nz/centos/RPM-GPG-KEY-CentOS-7
  
 #contrib - packages by Centos Users
 [contrib]
-name=CentOS-$releasever - Contrib - ucmirror.canterbury.ac.nz
+name=CentOS-$releasever - Contrib - mirror.fsmg.org.nz
 failovermethod=priority
-baseurl=http://ucmirror.canterbury.ac.nz/linux/centos/$releasever/contrib/$basearch/
+baseurl=http://mirror.fsmg.org.nz/centos/$releasever/contrib/$basearch/
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=contrib
 gpgcheck=1
 enabled=0
-gpgkey=http://ucmirror.canterbury.ac.nz/linux/centos/RPM-GPG-KEY-CentOS-7
+gpgkey=http://mirror.fsmg.org.nz/centos/RPM-GPG-KEY-CentOS-7
