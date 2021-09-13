@@ -21,7 +21,7 @@
     Server will run on http://localhost:8080
 
 ## Troubleshooting
-1. Check your mirroring succeeded vy running typing:
+1. Check your mirroring succeeded by running:
     ```bash
     du -sh /mnt/centos_mirror
     ```
